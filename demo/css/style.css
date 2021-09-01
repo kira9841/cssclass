@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* start to navbar style */
+
+
+header{background-color:#1E2027  ;
+    display: flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-between;
+
+}
+.logo img{
+     /* color:#fff; */
+    padding-left:10px;
+    height:50px;
+    width:50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    
+}
+nav ul{
+    list-style-type:none;
+    margin:0;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+nav ul li a{
+    color:#ffff;
+    text-decoration:none;
+    font-size:20px;
+    padding:20px;
+    display:inline-block;
+}
+.search-form{
+    padding-right:20px;
+}
+form input{
+    padding:8px;
+}
+input[type="submit"]{
+    background-color: aqua;
+    color:blueviolet;
+    border-color:crimson;
+}
+nav ul li a:hover{
+    background-color:rgb(99, 14, 11);
+}
+.dropdown{
+    width:120px;
+    background-color: gray;
+    position:absolute;
+    display:none;
+}
+nav ul li:hover .dropdown{
+    display:block;
+}
+.dropdown li a{
+    display:block;
+}
+.sub-dropdown{
+    width:120px;
+    position:absolute;
+    background-color: powderblue;
+    left:100%;
+    display:none;
+    top:0;
+}
+.dropdown li:hover .sub-dropdown{
+    display:block;
+}
+.active{
+    background-color:rgb(99, 14, 11)
+}
+
+/* end of navbar style */
+
+
+/* start of product contents */
+.products{
+    width:90%;
+    margin: auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+
+}
+.product-item{
+    width:30%;
+    /* background-color:blue; */
+    height:400px;
+    margin:20px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0,0,0,0.8);
+}
+  .product-image{
+    height:270px;
+    overflow:hidden;
+    
+    
+}
+.product-image img{
+    height:100%;
+    width:100%;
+    transition: all 3s;
+    
+   
+
+}
+.product-item button{
+    background-color:seagreen;
+    border-radius:30px;
+    padding: 10px;
+    border:dotted;
+    border-color: red;
+    color: black;
+
+}
+.product-image:hover img{
+    transform:scale(1.4);
+
+
+}
+.product-item button:hover{
+    background-color: red;
+}
+/* end of product content */
+
+
+
+/* Start of offer content */
+.offer{
+   height:600px;
+  width:100%;
+  background-image: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYnNpdGUlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px 0 0;
+  text-shadow: #1E2027;
+}
+.offer h2{ 
+    color :#ffff;
+    font-size: 50px;
+    text-shadow: 3px 3px 6px rgba(255,0, 0, 0);
+}
+.offer p{
+    color:blue;
+    text-transform: capitalize;
+    font-size:20px;
+}
+.offer-content{
+    width:90%;
+    display:flex;
+    flex-wrap:wrap;
+    margin:15px auto 0;
+    justify-content:space-between;
+}
+.offer-item{
+    width:47%;
+    background-color: #ffff;
+    height:400px;
+} 
+.offer-item h2{
+    color: blue;
+    text-shadow:none;
+    padding:10px 0 0;
+    font-size: 30px;
+}
+.offer-item-demo{
+    display: flex;
+flex-wrap: wrap;
+justify-content:space-evenly;
+}
+.offer-item-demo button{
+    background-color:seagreen;
+    border-radius:30px;
+    padding: 10px;
+    border:dotted;
+    border-color: red;
+    color: black;
+}
+.offer-data{
+    width:47%;
+    
+}
+.offer-img{
+    height:250px;
+
+}
+.offer-img img{
+    height:100%;
+    width:100%;
+}
+
+/* end of offer content */
+ 
+/* start of youtube-content style */
+.youtube-content{
+    width:90%;
+    margin:15px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.youtube-item{
+    width:47%;
+    height:300px;
+    /* background-color:aquamarine; */
+}
+iframe{
+    width: 100%;
+    height:100%;
+}
+
+/* start of youtube-content style */
+
+
+
+/* start of map-content  */
+.map{
+    height:300px;
+    margin-top:15px;
+}
+/* end of map-content */
+
+
+/* start of footer style */
+footer{
+    background-color: #1E2027;
+    padding:15px;
+    color:blue;
+    border: 1px solid red;
+    margin-top: 5px;
+    text-align: center;
+}
+/* end of footer style */
